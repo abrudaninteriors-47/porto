@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iulia Abrudan — Portfolio</title>
+
+  <!-- Fonts (swap if you want different vibe) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__tint" aria-hidden="true"></div>
+
+    <div class="wrap hero__wrap">
+      <div class="hero__topbar" id="topbar">
+        <a class="brand" href="#top">Abrudan</a>
+      
+        <!-- hamburger: shows on small screens only -->
+        <button class="navToggle" type="button" aria-controls="site-nav" aria-expanded="false">
+          <span class="navToggle__icon" aria-hidden="true"></span>
+          <span class="navToggle__label">Menu</span>
+        </button>
+      
+        <nav class="nav" id="site-nav" aria-label="Primary">
+          <a href="#top">Home</a>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a class="nav__cta" href="contact.html">Contact</a>
+        </nav>
+      </div>
+      
+
+      <!-- Big wordmark (intentionally off-grid) -->
+      <div class="hero__wordmark" aria-hidden="true">IULIA</div>
+
+      <div class="hero__center">
+        <p class="hero__kicker">VISUAL DESIGN + FRONT-END DEV</p>
+        <h1 class="hero__moto">/*your brand deserves a website with a pulse*/ </h1>
+        <p class="hero__sub">MIAMI / GLOBAL</p>
+
+        <a class="btn btn--ghost" href="#work">VIEW WORK</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- MANIFESTO -->
+  <section class="manifesto" id="about">
+    <div class="wrap manifesto__grid">
+  
+      <div class="manifesto__text">
+        <h2 class="manifesto__headline">
+          I BUILD DIGITAL SPACES<br>
+          THAT FEEL LIKE YOU.
+        </h2>
+  
+        <div class="manifesto__underline" aria-hidden="true"></div>
+  
+        <p class="manifesto__lead">
+          Bold visuals. Clear story.
+        </p>
+        
+        <p class="manifesto__copy">
+          Design-led websites that feel editorial, human,
+          and impossible to ignore.
+        </p>
+
+        <div class="manifesto__add">
+          <p class="manifesto__me">
+            I’m Iulia — I design like an editor and build like an engineer:
+            responsive layouts, accessible structure, and clean CSS that holds up.
+          </p>
+        
+          <ul class="manifesto__notes">
+            <li><span>What I love</span> typography, rhythm, contrast, whitespace</li>
+            <li><span>What I ship</span> semantic HTML, scalable CSS, simple JS</li>
+            <li><span>What you get</span> a site that feels alive and works everywhere</li>
+          </ul>
+        </div>
+      </div>
+  
+      <figure class="manifesto__portrait">
+        <!-- Use a transparent PNG with background removed -->
+        <img src="images/iulia-bw-cutout.png" alt="Iulia portrait" />
+      </figure>
+  
+    </div>
+  </section>
+
+  <section class="editorialBreak" aria-label="Editorial note">
+    <div class="wrap">
+      <figure class="editorialBreak__photo">
+        <img src="images/calmfource.webp" alt="Moody editorial detail" />
+  
+        <figcaption class="editorialBreak__overlay">
+          <p class="editorialBreak__note">it’s about</p>
+          <h3 class="editorialBreak__headline">
+            the website<br>
+            that feels<br>
+            like you
+          </h3>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  
+  
+
+
+  <!-- FEATURED WORK (collage) -->
+  <section class="work" id="work">
+    <div class="wrap">
+      <div class="work__header">
+        <h2 class="sectionTitle">FEATURED</h2>
+        <p class="sectionHint">A few pieces that show range + taste.</p>
+      </div>
+
+            <div class="collage">
+        <!-- Large card -->
+        <article class="card card--big">
+          <div class="card__media card__media--one" role="img" aria-label="Live website preview image"></div>
+          <div class="card__meta">
+            <p class="card__eyebrow">01 / A Fisherman's Life</p>
+            <h3 class="card__title">Client Website</h3>
+            <p class="card__desc">A real build focused on clarity, speed, and a confident visual story.</p>
+          </div>
+          <a class="card__link" href="projects/a-fishermans-life.html" aria-label="Open Live Website project"></a>
+        </article>
+
+        <!-- Overlapping smaller card -->
+        <article class="card card--small">
+          <div class="card__media card__media--two" role="img" aria-label="Yoga studio preview image"></div>
+          <div class="card__meta">
+            <p class="card__eyebrow">02 / WEB ASSIGNMENT</p>
+            <h3 class="card__title">Path of Light Yoga Studio</h3>
+            <p class="card__desc">Multi-page site with consistent typography, spacing rhythm, and responsive layout.</p>
+          </div>
+          <a class="card__link" href="projects/yoga.html" aria-label="Open Yoga Studio project"></a>
+        </article>
+
+        <!-- Coral tag -->
+        <a class="tagCta" href="#contact">SEE PROJECTS →</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVICES -->
+  <section class="services">
+    <div class="wrap">
+      <div class="services__top">
+        <h2 class="sectionTitle">SERVICES</h2>
+        <p class="sectionHint">Text-only on purpose. Confident + clean.</p>
+      </div>
+
+      <div class="services__grid">
+        <div class="svc">
+          <h3 class="svc__title">DESIGN</h3>
+          <p class="svc__sub">Web + Brand</p>
+          <div class="svc__line" aria-hidden="true"></div>
+        </div>
+
+        <div class="svc">
+          <h3 class="svc__title">DEVELOPMENT</h3>
+          <p class="svc__sub">HTML / CSS / JS</p>
+          <div class="svc__line" aria-hidden="true"></div>
+        </div>
+
+        <div class="svc">
+          <h3 class="svc__title">STRATEGY</h3>
+          <p class="svc__sub">Structure + Voice</p>
+          <div class="svc__line" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FINAL CTA -->
+  <section class="final" id="contact">
+    <div class="final__bg" aria-hidden="true"></div>
+
+    <div class="wrap final__wrap">
+      <h2 class="final__headline">LET’S BUILD SOMETHING<br>BOLD.</h2>
+      <p class="final__lead">
+        Tell me what you’re building — I’ll shape the visuals and ship the front-end.
+      </p>
+      <a class="btn btn--coral" href="contact.html">GET IN TOUCH</a>
+
+      <p class="final__fine">
+        Email: abrudandev@gmail.com · Instagram: @yourhandle
+      </p>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap foot__wrap">
+      <p>© <span id="year"></span> Iulia Abrudan</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    const topbar = document.querySelector(".hero__topbar");
+    const btn = document.querySelector(".navToggle");
+    const nav = document.querySelector("#site-nav");
+  
+    if (topbar && btn && nav) {
+      btn.addEventListener("click", () => {
+        const isOpen = topbar.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", String(isOpen));
+      });
+  
+      nav.addEventListener("click", (e) => {
+        if (e.target.tagName.toLowerCase() === "a") {
+          topbar.classList.remove("is-open");
+          btn.setAttribute("aria-expanded", "false");
+        }
+      });
+    }
+  </script>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+  
+  
+
+</body>
+</html>
