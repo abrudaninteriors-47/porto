@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Message sent — Iulia Abrudan</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="thankyou">
+
+<header class="hero" style="min-height:70vh; padding: 22px 0 56px;">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__tint" aria-hidden="true"></div>
+
+  <div class="wrap hero__wrap" style="display:grid; place-items:center; text-align:center;">
+    
+    <p class="hero__kicker">THANK YOU</p>
+
+    <h1 class="contactHero__title" style="max-width: 18ch;">
+      Your message is in my inbox.
+    </h1>
+
+    <p class="contactHero__sub" style="max-width: 42ch;">
+      I usually reply within 24 hours.  
+      Looking forward to reading about your project.
+    </p>
+
+    <div style="margin-top: 26px;">
+      <a class="btn btn--ghost" href="index.html#work">View work</a>
+      <a class="btn btn--coral btn--filled" href="contact.html" style="margin-left:10px;">
+        Send another
+      </a>
+    </div>
+
+  </div>
+</header>
+
+<footer class="foot">
+  <div class="wrap foot__wrap">
+    <p>© <span id="year"></span> Iulia Abrudan</p>
+    <a href="index.html">Home ↑</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
