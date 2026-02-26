@@ -803,7 +803,7 @@ and keep the tint below. */
   background:
     radial-gradient(560px 300px at 80% 30%, rgba(255,255,255,0.12), transparent 65%),
     linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.65)),
-    url("../images/project-yoga.png");
+    url("project-yoga.png");
   background-size: cover;
   background-position: center;
 }
