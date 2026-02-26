@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Client Website — Iulia Abrudan</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <header class="hero" style="min-height:auto; padding: 22px 0 26px;">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__tint" aria-hidden="true"></div>
+
+    <div class="wrap hero__wrap">
+      <div class="hero__topbar">
+        <a class="brand" href="../index.html#top">Abrudan</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="../index.html#top">Home</a>
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#work">Work</a>
+          <a class="nav__cta" href="../index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="projectPage">
+    <div class="wrap">
+      <div class="projectTop">
+        <div class="breadcrumb">
+          <a href="../index.html#work">← Back to Work</a>
+        </div>
+
+        <h1 class="projectTitle">Client Website (Live)</h1>
+        <p class="projectLead">
+          A real-world build focused on clarity, speed, and a confident visual story — designed to feel premium and work everywhere.
+        </p>
+
+        <div class="projectLinks">
+          <a class="btn btn--coral btn--filled btn--pulse"
+            href="../projects/a-fishermans-life/index.html"
+            target="_blank"
+            rel="noopener">
+            Visit live
+          </a>
+
+          <a class="btn btn--ghost" href="../index.html#contact">Hire me</a>
+        </div>
+      </div>
+
+      <figure class="projectHero">
+        <img src="../images/project-fisherman.png" alt="Screenshot preview of the live website" />
+      </figure>
+
+      <div class="projectGrid">
+        <section class="projectCard">
+          <h3>What I did</h3>
+          <ul class="projectList">
+            <li><strong>Role:</strong> visual design + front-end development</li>
+            <li><strong>Stack:</strong> HTML, CSS, light JavaScript</li>
+            <li><strong>Built:</strong> responsive sections, reusable layout patterns, consistent typography</li>
+            <li><strong>Quality:</strong> semantic structure + accessibility-friendly decisions</li>
+          </ul>
+        </section>
+
+        <aside class="projectCard">
+          <h3>Highlights</h3>
+          <ul class="projectList">
+            <li>Mobile-first layout + clean spacing rhythm</li>
+            <li>Navigation that stays usable on small screens</li>
+            <li>Performance-minded: minimal JS, clean CSS</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__wrap">
+      <p>© <span id="year"></span> Iulia Abrudan</p>
+      <a href="../index.html#top">Home ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
