@@ -101,7 +101,8 @@
           <form
             class="contactForm"
             action="https://formspree.io/f/mnjblzzy"
-            method="POST">
+            method="POST"
+            onsubmit="return redirectAfterSubmit(event)">
 
             <input type="hidden" name="_next" value="https://abrudaninteriors-47.github.io/porto/thank-you.html">
             <label class="field">
@@ -190,5 +191,26 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
+  <script>
+    function redirectAfterSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+
+    fetch(form.action, {
+     method: "POST",
+     body: new FormData(form),
+     headers: { 'Accept': 'application/json' }
+     }).then(response => {
+     if (response.ok) {
+      window.location.href = "thank-you.html";
+     } else {
+      alert("Something went wrong. Please try again.");
+      }
+    });
+  
+      return false;
+    }
+    </script>
+  
 </body>
 </html>
