@@ -875,7 +875,7 @@ a{ color: inherit; text-decoration: none; }
   background:
     radial-gradient(560px 300px at 70% 25%, rgba(255,255,255,0.12), transparent 65%),
     linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.65)),
-    url("../images/webiste-example.png");
+    url("../images/webisite-example.png");
   background-size: cover;
   background-position: center;
   width: min(520px, 92vw);
@@ -883,7 +883,7 @@ a{ color: inherit; text-decoration: none; }
 }
 
 .collageExtra{
-  margin-top:40px;
+  margin-top:20px;
   display:flex;
   justify-content:center;
 }
