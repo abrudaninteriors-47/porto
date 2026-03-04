@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Iulia Abrudan — Portfolio</title>
 
-  <!-- Fonts (swap if you want different vibe) -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 
 <body>
 
-  <!-- HERO -->
+
   <header class="hero" id="top">
     <div class="hero__bg" aria-hidden="true"></div>
     <div class="hero__tint" aria-hidden="true"></div>
@@ -26,7 +26,7 @@
       <div class="hero__topbar" id="topbar">
         <a class="brand" href="#top">Abrudan</a>
       
-        <!-- hamburger: shows on small screens only -->
+      
         <button class="navToggle" type="button" aria-controls="site-nav" aria-expanded="false">
           <span class="navToggle__icon" aria-hidden="true"></span>
           <span class="navToggle__label">Menu</span>
@@ -55,7 +55,7 @@
   </header>
 
 
-  <!-- MANIFESTO -->
+
   <section class="manifesto" id="about">
     <div class="wrap manifesto__grid">
   
@@ -118,54 +118,59 @@
   
 
 
-  <!-- FEATURED WORK (collage) -->
-  <section class="work" id="work">
-    <div class="wrap">
-      <div class="work__header">
-        <h2 class="sectionTitle">FEATURED</h2>
-        <p class="sectionHint">A few pieces that show range + taste.</p>
-      </div>
-
-            <div class="collage">
-        <!-- Large card -->
-        <article class="card card--big">
-          <div class="card__media card__media--one" role="img" aria-label="Live website preview image"></div>
-          <div class="card__meta">
-            <p class="card__eyebrow">01 / A Fisherman's Life</p>
-            <h3 class="card__title">Client Website</h3>
-            <p class="card__desc">A real build focused on clarity, speed, and a confident visual story.</p>
-          </div>
-          <a class="card__link" href="projects/a-fisherman-life.html" aria-label="Open Live Website project"></a>
-        </article>
-
-        <!-- Overlapping smaller card -->
-        <article class="card card--small">
-          <div class="card__media card__media--two" role="img" aria-label="Yoga studio preview image"></div>
-          <div class="card__meta">
-            <p class="card__eyebrow">02 / WEB ASSIGNMENT</p>
-            <h3 class="card__title">Path of Light Yoga Studio</h3>
-            <p class="card__desc">Multi-page site with consistent typography, spacing rhythm, and responsive layout.</p>
-          </div>
-          <a class="card__link" href="projects/yoga.html" aria-label="Open Yoga Studio project"></a>
-        </article>
-
-        <article class="card card--small">
-          <div class="card__media card__media--three" role="img" aria-label="Milky Way Retreats preview"></div>
-          <div class="card__meta">
-            <p class="card__eyebrow">03 / DIGITAL EXPERIENCE</p>
-            <h3 class="card__title">Milky Way Retreats</h3>
-            <p class="card__desc">
-                Branding, website management, and marketing visuals for a wellness retreat concept.
-            </p>
-          </div>  
-          <a class="card__link" href="projects/milky-way-retreats.html" aria-label="Open Milky Way Retreats project"></a>
-        </article>
-
-              
-        <a class="tagCta" href="projects/a-fisherman-life.html">VIEW CASE STUDY →</a>
-      </div>
+  
+ <section class="work" id="work">
+  <div class="wrap">
+    <div class="work__header">
+      <h2 class="sectionTitle">FEATURED</h2>
+      <p class="sectionHint">A few pieces that show range + taste.</p>
     </div>
-  </section>
+
+    <!-- Collage (KEEP overlap for the first two only) -->
+    <div class="collage">
+
+      <!-- 01 / BIG -->
+      <article class="card card--big">
+        <div class="card__media card__media--one" role="img" aria-label="Live website preview image"></div>
+        <div class="card__meta">
+          <p class="card__eyebrow">01 / A Fisherman's Life</p>
+          <h3 class="card__title">Client Website</h3>
+          <p class="card__desc">A real build focused on clarity, speed, and a confident visual story.</p>
+        </div>
+        <a class="card__link" href="projects/a-fisherman-life.html" aria-label="Open Live Website project"></a>
+      </article>
+
+      <!-- 02 / SMALL (overlapping) -->
+      <article class="card card--small">
+        <div class="card__media card__media--two" role="img" aria-label="Yoga studio preview image"></div>
+        <div class="card__meta">
+          <p class="card__eyebrow">02 / WEB ASSIGNMENT</p>
+          <h3 class="card__title">Path of Light Yoga Studio</h3>
+          <p class="card__desc">Multi-page site with consistent typography, spacing rhythm, and responsive layout.</p>
+        </div>
+        <a class="card__link" href="projects/yoga.html" aria-label="Open Yoga Studio project"></a>
+      </article>
+
+    </div> <!-- ✅ COLLAGE ENDS HERE -->
+
+    <!-- 03 / BELOW (NO overlap) -->
+    <div class="collageExtra">
+      <article class="card card--extra">
+        <div class="card__media card__media--three" role="img" aria-label="Milky Way Retreats preview"></div>
+        <div class="card__meta">
+          <p class="card__eyebrow">03 / DIGITAL EXPERIENCE</p>
+          <h3 class="card__title">Milky Way Retreats</h3>
+          <p class="card__desc">Branding, website management, and marketing visuals for a wellness retreat concept.</p>
+        </div>
+        <a class="card__link" href="projects/milky-way-retreats.html" aria-label="Open Milky Way Retreats project"></a>
+      </article>
+    </div>
+
+    <!-- CTA -->
+    <a class="tagCta" href="projects/a-fisherman-life.html">VIEW CASE STUDY →</a>
+
+  </div>
+</section>
 
 
   <!-- SERVICES -->
