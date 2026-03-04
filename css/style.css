@@ -11,9 +11,9 @@ body{
 
 
 body{
-  min-height: 100vh;   /* <-- add */
-  display: flex;       /* <-- add */
-  flex-direction: column; /* <-- add */
+  min-height: 100vh;  
+  display: flex;       
+  flex-direction: column;
 }
 a{ color: inherit; text-decoration: none; }
 
@@ -287,7 +287,7 @@ a{ color: inherit; text-decoration: none; }
   text-underline-offset: 3px;
 }
 
-/* Editorial photo block (keeps your magazine vibe) */
+
 .contactEditorial{
   padding: 0 0 clamp(70px, 8vw, 120px);
 }
@@ -399,17 +399,13 @@ a{ color: inherit; text-decoration: none; }
 
 }
 
-/* ================================
-   VISIT LIVE BUTTON — PULSE
-   ================================ */
-
    .btn--pulse{
     position: relative;
     isolation: isolate;
     animation: pulseFloat 1.8s ease-in-out infinite;
   }
   
-  /* expanding ring */
+ 
   .btn--pulse::after{
     content: "";
     position: absolute;
@@ -423,20 +419,20 @@ a{ color: inherit; text-decoration: none; }
     z-index: -1;
   }
   
-  /* subtle vertical lift */
+ 
   @keyframes pulseFloat{
     0%, 100% { transform: translateY(0); }
     50%      { transform: translateY(-2px); }
   }
   
-  /* soft expanding ring */
+ 
   @keyframes pulseRing{
     0%   { opacity: 0.6; transform: scale(0.92); }
     70%  { opacity: 0;   transform: scale(1.25); }
     100% { opacity: 0;   transform: scale(1.25); }
   }
   
-  /* accessibility: respect reduced motion */
+ 
   @media (prefers-reduced-motion: reduce){
     .btn--pulse,
     .btn--pulse::after{
@@ -482,7 +478,7 @@ a{ color: inherit; text-decoration: none; }
   justify-content: space-between;
   gap: 16px;
 
-  /* Always: keep topbar above the big wordmark */
+  
   position: relative;
   z-index: 3;
 }
@@ -568,7 +564,7 @@ a{ color: inherit; text-decoration: none; }
   text-transform: uppercase;
 }
 
-/* Medium screens: stop wordmark from touching the kicker */
+
 @media (max-width: 1200px){
   .hero__wordmark{
     top: 18px;
@@ -581,7 +577,7 @@ a{ color: inherit; text-decoration: none; }
   }
 }
 
-/* tighter mid-range (your screenshot window) */
+
 @media (max-width: 1100px){
   .hero__wordmark{
     top: 72px;
@@ -667,12 +663,12 @@ a{ color: inherit; text-decoration: none; }
   width: min(420px, 44vw);
   height: auto;
 
-  /* Make it feel like the inspo */
+  
   filter: grayscale(1) contrast(1.15) brightness(0.95);
   mix-blend-mode: normal;
   opacity: 0.7;
 
-  /* Seamless edge blend */
+ 
   -webkit-mask-image: radial-gradient(closest-side, #000 70%, transparent 100%);
   mask-image: radial-gradient(closest-side, #000 70%, transparent 100%);
 
@@ -680,7 +676,7 @@ a{ color: inherit; text-decoration: none; }
   z-index: 1;
 }
 
-/* ORANGE ARCH (behind your cutout) */
+
 .manifesto__portrait::before{
   content: "";
   position: absolute;
@@ -753,7 +749,7 @@ a{ color: inherit; text-decoration: none; }
   white-space: nowrap;
 }
 
-/* WORK */
+
 .work__header{
   margin-bottom: 18px;
   position: relative;
@@ -840,7 +836,7 @@ a{ color: inherit; text-decoration: none; }
 
 .card__link{ position: absolute; inset: 0; }
 
-/* Layout positions */
+
 .card--big{
   width: min(720px, 88vw);
   height: 320px;
@@ -892,7 +888,7 @@ a{ color: inherit; text-decoration: none; }
   width:520px;
 }
 
-/* SERVICES */
+
 .services{
   padding: clamp(54px, 6vw, 92px) 0;
 }
@@ -1003,7 +999,7 @@ a{ color: inherit; text-decoration: none; }
 .foot a{ opacity: 0.9; }
 .foot a:hover{ opacity: 1; }
 
-/* Hamburger (hidden by default / desktop) */
+
 .navToggle{
   display: none;
   appearance: none;
@@ -1060,7 +1056,7 @@ a{ color: inherit; text-decoration: none; }
   }
 }
 
-/* 2) Tablet & down: hamburger menu + stop overlap */
+
 @media (max-width: 900px){
   .hero{ padding-top: 18px; }
 
@@ -1073,7 +1069,7 @@ a{ color: inherit; text-decoration: none; }
 
   .navToggle{ display: inline-flex; }
 
-  /* hide nav by default on small screens */
+  
   .nav{
     display: none;
     grid-column: 1 / -1;
@@ -1088,7 +1084,7 @@ a{ color: inherit; text-decoration: none; }
     -webkit-backdrop-filter: blur(8px);
   }
 
-  /* show nav when open */
+
   .hero__topbar.is-open .nav{ display: grid; }
 
   .nav a{
@@ -1102,7 +1098,7 @@ a{ color: inherit; text-decoration: none; }
 
   .nav a:hover{ background: rgba(246,243,237,0.08); }
 
-  /* fix overlap: shrink + move wordmark on small screens */
+ 
   .hero__wordmark{
     top: 64px;
     left: -4vw;
@@ -1135,7 +1131,6 @@ a{ color: inherit; text-decoration: none; }
   .collage{ min-height: unset; }
 }
 
-/* 3) Phones: services 1 column */
 @media (max-width: 780px){
   .services__grid{ grid-template-columns: 1fr; }
 
@@ -1232,7 +1227,7 @@ a{ color: inherit; text-decoration: none; }
   transform: rotate(-3deg);
 }
 
-/* headline */
+
 .editorialBreak__headline{
   margin: 0;
   font-family: "Fraunces", serif;
@@ -1248,7 +1243,7 @@ a{ color: inherit; text-decoration: none; }
   position: relative;
   z-index: 1;
 
-  /* push WORK content down below the overlapped photo */
+  
   padding-top: calc(var(--drop) + 160px);
 
   /* ensure nothing pulls it up */
@@ -1315,7 +1310,7 @@ a{ color: inherit; text-decoration: none; }
   font-weight: 600;
 }
 
-/* ---------- EDITORIAL BREAK: SMALL SCREEN FIX ---------- */
+
 @media (max-width: 700px){
   .editorialBreak{
     --drop: 90px;
@@ -1360,7 +1355,7 @@ a{ color: inherit; text-decoration: none; }
   }
 }
 
-/* ===== THANK YOU PAGE — QUIET FOOTER ===== */
+
 
 .thankyou .foot{
   background: transparent;
@@ -1401,11 +1396,10 @@ a{ color: inherit; text-decoration: none; }
   min-height: 0; 
 }
 
-/* keep footer at bottom */
+
 .thankyou .foot{
   margin-top: auto;
-}
-/* Case Study — Milky Way Retreats */
+
 .caseHero{
   padding: 64px 0 28px;
 }
