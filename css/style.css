@@ -36,9 +36,6 @@ a{ color: inherit; text-decoration: none; }
   opacity: 0.75;
 }
 
-/* =========================
-   CONTACT PAGE — EPIC VIBE
-   ========================= */
 
 /* Contact hero tweaks */
 .contactHero{
@@ -356,7 +353,7 @@ a{ color: inherit; text-decoration: none; }
 }
 
 
-/* Buttons */
+
 .btn{
   display: inline-flex;
   align-items: center;
@@ -387,7 +384,7 @@ a{ color: inherit; text-decoration: none; }
 
 .btn--coral:hover{ background: rgba(255, 74, 61, 0.325); }
 
-/* Filled coral button (for light backgrounds) */
+
 .btn--filled{
   background: #FF4A3D;
   color: #F6F3ED;
@@ -626,7 +623,6 @@ a{ color: inherit; text-decoration: none; }
 
 .manifesto__text{ min-width: 0; }
 
-/* MANIFESTO — editorial typography */
 .manifesto__lead{
   font-family: "Fraunces", serif;
   font-weight: 900;
@@ -871,7 +867,7 @@ a{ color: inherit; text-decoration: none; }
   background:
     radial-gradient(560px 300px at 70% 25%, rgba(255,255,255,0.12), transparent 65%),
     linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.65)),
-    url("../images/webisite-example.png");
+    url("../images/website-example.png");
   background-size: cover;
   background-position: center;
   width: min(520px, 92vw);
