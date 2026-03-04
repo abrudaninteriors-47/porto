@@ -1142,10 +1142,10 @@ and keep the tint below. */
   }
 }
 
-/* ----- OVERLAP SYSTEM (FINAL) ----- */
+/*  OVERLAP SYSTEM (FINAL) */
 
 .editorialBreak{
-  --drop: 160px;              /* how much photo drops into tan */
+  --drop: 160px;             
   position: relative;
   padding: 40px 0 0;
   background: transparent;
@@ -1157,7 +1157,7 @@ and keep the tint below. */
   content:"";
   position: absolute;
   inset: 0;
-  bottom: var(--drop);        /* purple stops early */
+  bottom: var(--drop);        
   background: #E8DBFF;
   z-index: 0;
 }
@@ -1194,7 +1194,7 @@ and keep the tint below. */
   filter: contrast(1.05) saturate(0.92);
 }
 
-/* TEXT OVERLAY — EDITORIAL CORNER */
+
 .editorialBreak__overlay{
   position: absolute;
   top: 60px;
@@ -1363,11 +1363,11 @@ and keep the tint below. */
 }
 
 .foot{
-  margin-top: auto;  /* <-- add: pushes footer to bottom */
+  margin-top: auto;  
 }
 
 
-/* ===== THANK YOU PAGE: REMOVE GAP ABOVE FOOTER ===== */
+
 
 .thankyou{
   min-height: 100vh;
@@ -1375,14 +1375,103 @@ and keep the tint below. */
   flex-direction: column;
 }
 
-/* make the hero take all leftover space */
+
 .thankyou .hero{
   flex: 1;
-  min-height: 0; /* important so flex can control height */
+  min-height: 0; 
 }
 
 /* keep footer at bottom */
 .thankyou .foot{
   margin-top: auto;
 }
+/* Case Study — Milky Way Retreats */
+.caseHero{
+  padding: 64px 0 28px;
+}
 
+.backLink{
+  display:inline-block;
+  margin-bottom: 14px;
+  opacity: .85;
+}
+
+.caseTitle{
+  margin: 0;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: clamp(34px, 4vw, 56px);
+  letter-spacing: 0.01em;
+}
+
+.caseSub{
+  margin: 10px 0 18px;
+  font-size: 18px;
+  opacity: .9;
+}
+
+.caseMeta{
+  display: grid;
+  gap: 10px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(0,0,0,.04);
+}
+
+.caseMain{ padding: 18px 0 60px; }
+
+.caseSection{ padding: 18px 0; }
+.caseSection h2{
+  margin: 0 0 10px;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+}
+
+.caseList{ margin: 10px 0 0; padding-left: 18px; }
+.caseList li{ margin: 8px 0; line-height: 1.5; }
+
+.chipList{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 10px;
+  list-style:none;
+  padding:0;
+  margin: 10px 0 0;
+}
+.chipList li{
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.06);
+  font-size: 14px;
+}
+
+.caseGrid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.caseCard{
+  margin:0;
+  padding: 14px;
+  border-radius: 20px;
+  background: rgba(0,0,0,.04);
+}
+.caseCard img{
+  width:100%;
+  height:auto;
+  border-radius: 16px;
+  display:block;
+}
+.caseCard figcaption{
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: .85;
+}
+
+.caseFooter{
+  padding: 22px 0 50px;
+  opacity:.75;
+}
