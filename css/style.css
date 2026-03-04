@@ -871,6 +871,12 @@ and keep the tint below. */
 
 .tagCta:hover{ filter: brightness(0.98); }
 
+.card__media--three{
+  background-image: url("../images/milky-retreat-preview.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 /* SERVICES */
 .services{
   padding: clamp(54px, 6vw, 92px) 0;
