@@ -877,6 +877,16 @@ and keep the tint below. */
   background-position: center;
 }
 
+.collageExtra{
+  margin-top:40px;
+  display:flex;
+  justify-content:center;
+}
+
+.card--extra{
+  width:520px;
+}
+
 /* SERVICES */
 .services{
   padding: clamp(54px, 6vw, 92px) 0;
@@ -1115,7 +1125,6 @@ and keep the tint below. */
     transform: rotate(-4deg);
   }
 
-  /* WORK collage: remove absolute overlap on small */
   .card--small{ position: static; margin-top: 16px; width: 100%; }
   .tagCta{ position: static; display: inline-block; margin-top: 14px; }
   .collage{ min-height: unset; }
