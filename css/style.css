@@ -465,9 +465,7 @@ a{ color: inherit; text-decoration: none; }
   z-index: -3;
 }
 
-/* Replace this with your hero image later:
-.hero__bg { background-image: url("images/hero.jpg"); background-size: cover; background-position: center; }
-and keep the tint below. */
+
 
 .hero__tint{
   position: absolute;
@@ -857,7 +855,9 @@ and keep the tint below. */
 }
 
 .tagCta{
-  position: absolute;
+  position: static;
+  display:inline-block;
+  margin-top:16px;
   left: 0;
   bottom: 14px;
   background: #FF4A3D;
@@ -872,7 +872,10 @@ and keep the tint below. */
 .tagCta:hover{ filter: brightness(0.98); }
 
 .card__media--three{
-  background-image: url("../images/milky-retreat-preview.jpg");
+  background:
+    radial-gradient(560px 300px at 70% 25%, rgba(255,255,255,0.12), transparent 65%),
+    linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.65)),
+    url("../images/webiste-example.png");
   background-size: cover;
   background-position: center;
 }
