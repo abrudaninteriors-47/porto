@@ -160,7 +160,7 @@ table{
 	width: 60%  ;
 	border:1px solid #3f2860;
 	border-collapse: collapse;
-	margin: 0 auto 1em auto;/* centered it correctly*/
+	margin: 0 auto 1em auto;
 
 }
  td  {
@@ -231,10 +231,10 @@ main ul li{
   
 	font-size: 1.4em;
 	line-height: 1;
-	color: #A26100; /* warm yoga accent */
+	color: #A26100; 
   }
   
-  /* subtle divider, except last item */
+  
   main ul li:not(:last-child){
 	padding-bottom: 12px;
 	border-bottom: 1px solid rgba(64,64,122,0.08);
@@ -275,6 +275,7 @@ main ul li{
 .clear{
 	margin-top: 12px;
 }
+
 
 
 
