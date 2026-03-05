@@ -126,9 +126,15 @@
     </section>
 
   </main>
-
-  <footer class="wrap caseFooter">
-    <small>© Iulia Abrudan — Portfolio Case Study</small>
+<footer class="foot">
+    <div class="wrap foot__wrap">
+      <p>© <span id="year"></span> Iulia Abrudan</p>
+      <a href="../index.html#top">Home ↑</a>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
