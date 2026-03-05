@@ -545,6 +545,12 @@ a{ color: inherit; text-decoration: none; }
   text-transform: uppercase;
 }
 
+.contactHero .hero__wordmark{
+  top: 110px;
+  left: -2vw;
+  opacity: 0.08 !important;
+}
+
 @media (max-width: 1200px){
   .hero__wordmark{
     top: 18px;
