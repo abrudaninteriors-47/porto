@@ -15,7 +15,7 @@
 
 <body>
 
-  <!-- TOP HERO (same as your vibe) -->
+  
   <header class="hero contactHero" id="top">
     <div class="hero__bg" aria-hidden="true"></div>
     <div class="hero__tint" aria-hidden="true"></div>
@@ -37,10 +37,13 @@
         </nav>
       </div>
 
-      <!-- big wordmark -->
+     
       <div class="hero__wordmark contactHero__wordmark" aria-hidden="true">CONTACT</div>
 
       <div class="contactHero__center">
+        <a class="btn btn--ghost contactHero__cta" href="#contact-form">
+          Start the form ↓
+        </a>
         <p class="hero__kicker">LET’S MAKE IT FEEL EXPENSIVE</p>
         <h1 class="contactHero__title">Tell me what you’re building.</h1>
         <p class="contactHero__sub">I’ll shape the visuals + ship the front-end.</p>
@@ -48,12 +51,12 @@
     </div>
   </header>
 
-  <!-- CONTACT MAIN -->
+ 
   <main class="contactPage">
+    <span id="contact-form" class="anchorTarget" aria-hidden="true"></span>
     <section class="contactBlock">
       <div class="wrap contactBlock__grid">
 
-        <!-- LEFT: editorial info -->
         <aside class="contactInfo">
           <p class="contactInfo__note">quick note</p>
 
@@ -92,12 +95,12 @@
           </div>
         </aside>
 
-        <!-- RIGHT: form card -->
+       
         <section class="contactCard" aria-label="Contact form">
           <p class="contactCard__kicker">send a message</p>
           <h3 class="contactCard__title">Let’s talk.</h3>
 
-          <!-- Formspree (recommended): replace xxxxxxx with your Form ID -->
+          
           <form
             class="contactForm"
             action="https://formspree.io/f/mnjblzzy"
@@ -143,11 +146,10 @@
       </div>
     </section>
 
-    <!-- OPTIONAL: editorial break image block to keep the “magazine” vibe -->
     <section class="contactEditorial" aria-label="Editorial statement">
       <div class="wrap">
         <figure class="contactEditorial__photo">
-          <!-- you can swap this image for any moody texture / detail photo -->
+         
           <img src="images/calmfource.webp" alt="Moody editorial detail" />
           <figcaption class="contactEditorial__overlay">
             <p class="contactEditorial__note">promise</p>
