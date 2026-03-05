@@ -1502,10 +1502,7 @@ a{ color: inherit; text-decoration: none; }
   opacity: .75;
 }
 
-/* ===========================
-   CASE STUDY — MATCH PORTFOLIO
-   (kept, but deduped)
-   =========================== */
+
 
 :root{
   --tan:#F6F3ED;
@@ -1515,7 +1512,7 @@ a{ color: inherit; text-decoration: none; }
   --ink:#141414;
 }
 
-/* Case pages */
+
 .casePage{
   background: var(--tan);
   color: var(--ink);
@@ -1527,9 +1524,10 @@ a{ color: inherit; text-decoration: none; }
   padding: clamp(54px, 6vw, 86px) 0 clamp(28px, 3vw, 38px);
   isolation: isolate;
   overflow: hidden;
+  min-height: auto;
 }
 
-/* burgundy gradient with soft lighting */
+
 .caseHero::before{
   content:"";
   position:absolute;
