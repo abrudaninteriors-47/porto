@@ -11,14 +11,16 @@
 
 <body class="casePage">
 
-<header class="hero" style="min-height:auto; padding: 22px 0 26px;">
+
+  <header class="hero caseHero" style="min-height:auto; padding: 22px 0 26px;">
     <div class="hero__bg" aria-hidden="true"></div>
     <div class="hero__tint" aria-hidden="true"></div>
 
     <div class="wrap hero__wrap">
       <div class="hero__topbar">
         <a class="brand" href="../index.html#top">Abrudan</a>
-        <nav class="nav" aria-label="Primary">
+
+        <nav class="nav" id="site-nav" aria-label="Primary">
           <a href="../index.html#top">Home</a>
           <a href="../index.html#about">About</a>
           <a href="../index.html#work">Work</a>
@@ -28,31 +30,25 @@
     </div>
   </header>
 
-   <div class="wrap">
-      <div class="projectTop">
-        <div class="breadcrumb">
-          <a href="../index.html#work">← Back to Work</a>
-        </div>
 
-       <h1>Wellness Retreat Brand & Website</h1>
-        <p class="projectLead">
-          A startup retreat concept brought to life through brand visuals,
-          a Wix website, and operational workflow setup.
-        </p>
+  <section class="wrap projectTop" aria-label="Case study intro">
+    <div class="breadcrumb">
+      <a href="../index.html#work">← Back to Work</a>
+    </div>
+
+    <h1>Wellness Retreat Brand &amp; Website</h1>
+
+    <p class="projectLead">
+      A startup retreat concept brought to life through brand visuals,
+      a Wix website, and operational workflow setup.
+    </p>
+  </section>
 
   
   <main class="wrap caseMain">
 
     <section class="caseSection">
-      <h2>Overview</h2>
-      <p>
-        Co-created the digital presence for a wellness retreat startup. Built and maintained the Wix website,
-        produced marketing visuals, and created documentation/process guides to support operations.
-      </p>
-    </section>
-
-    <section class="caseSection">
-      <h2>What I Did</h2>
+      <h2>Value Provided</h2>
       <ul class="caseList">
         <li>Built and maintained a Wix website (pages, content updates, and user-friendly layout).</li>
         <li>Created marketing visuals and branded promotional materials (social + print-ready assets).</li>
@@ -71,57 +67,32 @@
       </ul>
     </section>
 
-    <!-- SAFE GALLERY -->
     <section class="caseSection">
       <h2>Selected Visuals</h2>
       <p class="caseNote">Marketing, brand communication, and promotional mockups.</p>
 
       <div class="safeGallery" role="list">
         <figure class="safeGallery__item" role="listitem">
-          <img
-            src="../images/website-example.png"
-            alt="Wix website preview screenshot"
-            loading="lazy"
-            decoding="async"
-            width="1600"
-            height="900"
-          />
+          <img src="../images/website-example.png" alt="Wix website preview screenshot"
+               loading="lazy" decoding="async" width="1600" height="900" />
           <figcaption class="safeGallery__cap">Website layout snapshot (Wix preview)</figcaption>
         </figure>
 
         <figure class="safeGallery__item" role="listitem">
-          <img
-            src="../images/logo-milky-way.JPG"
-            alt="Milky Way Retreats logo"
-            loading="lazy"
-            decoding="async"
-            width="1200"
-            height="1200"
-          />
+          <img src="../images/logo-milky-way.JPG" alt="Milky Way Retreats logo"
+               loading="lazy" decoding="async" width="1200" height="1200" />
           <figcaption class="safeGallery__cap">Brand mark / logo</figcaption>
         </figure>
 
         <figure class="safeGallery__item" role="listitem">
-          <img
-            src="../images/poster.PNG"
-            alt="Retreat promo poster"
-            loading="lazy"
-            decoding="async"
-            width="1200"
-            height="1600"
-          />
+          <img src="../images/poster.PNG" alt="Retreat promo poster"
+               loading="lazy" decoding="async" width="1200" height="1600" />
           <figcaption class="safeGallery__cap">Promotional poster concept</figcaption>
         </figure>
 
         <figure class="safeGallery__item" role="listitem">
-          <img
-            src="../images/yogis.png"
-            alt="Yoga apparel mockup"
-            loading="lazy"
-            decoding="async"
-            width="1600"
-            height="900"
-          />
+          <img src="../images/yogis.png" alt="Yoga apparel mockup"
+               loading="lazy" decoding="async" width="1600" height="900" />
           <figcaption class="safeGallery__cap">Merch / apparel mockups</figcaption>
         </figure>
       </div>
@@ -137,7 +108,9 @@
     </section>
 
   </main>
-<footer class="foot">
+
+
+  <footer class="foot">
     <div class="wrap foot__wrap">
       <p>© <span id="year"></span> Iulia Abrudan</p>
       <a href="../index.html#top">Home ↑</a>
@@ -145,7 +118,9 @@
   </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    const y = document.getElementById("year");
+    if (y) y.textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
