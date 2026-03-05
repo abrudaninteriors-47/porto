@@ -68,7 +68,7 @@ nav a {
   font-size: 18px;
 }
 
-/* index top section */
+
 
 #topsection {
   width: 90%;
@@ -123,7 +123,7 @@ nav a {
   margin: 5px;
 }
 
-/* index gallery cards */
+
 
 .photogrid {
   display: grid;
@@ -159,7 +159,6 @@ nav a {
   object-fit: cover;
 }
 
-/* index bottom section */
 
 #bottomsection {
   width: 90%;
@@ -189,7 +188,6 @@ nav a {
   border-radius: 6px;
 }
 
-/* footer */
 
 footer {
   font-family: "Lato", sans-serif;
@@ -230,8 +228,6 @@ footer {
   text-decoration: none;
   margin-left: 10px;
 }
-
-/* about page */
 
 #about-hero {
   background-color: #d4dfe9;
@@ -297,8 +293,6 @@ footer {
   padding-left: 18px;
   line-height: 1.7;
 }
-
-/* booking page */
 
 #book-hero {
   background-color: #d4dfe9;
@@ -369,8 +363,6 @@ footer {
   object-fit: cover;
 }
 
-/* gallery page */
-
 #gallery {
   background-color: #d4dfe9;
   text-align: center;
@@ -433,8 +425,6 @@ h2 a {
 h2 a:hover {
   color: #9b7638;
 }
-
-/* reviews page */
 
 #reviews {
   background-color: #d4dfe9;
@@ -560,8 +550,6 @@ h1 + p {
   background-color: #142846;
 }
 
-/* location + faq page */
-
 #location-hero {
   background-color: #d4dfe9;
   text-align: center;
@@ -633,8 +621,6 @@ h1 + p {
   color: #0b263f;
   line-height: 1.6;
 }
-
-/* responsive */
 
 @media (max-width: 800px) {
   header {
