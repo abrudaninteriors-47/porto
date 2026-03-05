@@ -1649,6 +1649,9 @@ a{ color: inherit; text-decoration: none; }
   opacity: 0.92;
 }
 
+.caseHero .hero__topbar{
+  margin-bottom: clamp(20px, 2.4vw, 44px);
+}
 /* Small screens: keep hero readable */
 @media (max-width: 700px){
   .caseHero{ padding-top: 46px; }
@@ -1692,8 +1695,7 @@ a{ color: inherit; text-decoration: none; }
   aspect-ratio: 16 / 9;                /* stable layout even before image loads */
 }
 
-/* If you want the logo/poster not cropped: give them a class and change fit */
-.safeGallery__item--contain img{
+
   object-fit: contain;
   background: rgba(255,255,255,0.6);
 }
