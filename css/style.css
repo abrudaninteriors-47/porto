@@ -1,4 +1,4 @@
-/* Base */
+
 * { box-sizing: border-box; }
 html, body { height: 100%; }
 
@@ -324,7 +324,7 @@ a{ color: inherit; text-decoration: none; }
   color: #8C0F12;
 }
 
-/* Anchor so the hero doesn't cover the scroll target */
+
 .anchorTarget{
   display: block;
   position: relative;
@@ -1361,15 +1361,12 @@ a{ color: inherit; text-decoration: none; }
   margin-top: auto;
 }
 
-/* ===========================
-   CASE + GALLERY (DEDUPED)
-   =========================== */
 
 .caseMain{
   padding: clamp(34px, 4vw, 56px) 0 clamp(70px, 7vw, 110px);
 }
 
-/* keep your earlier “case page” helpers that were NOT duplicated */
+
 .backLink{
   display: inline-flex;
   align-items: center;
@@ -1427,7 +1424,7 @@ a{ color: inherit; text-decoration: none; }
   font-size: 14px;
 }
 
-/* ---------- GALLERY (enlarged + scalable) ---------- */
+
 .gallery{
   margin-top: 14px;
   display:grid;
@@ -1588,7 +1585,7 @@ a{ color: inherit; text-decoration: none; }
   color: rgba(246,243,237,0.82);
 }
 
-/* Coral underline */
+
 .caseUnderline{
   width: min(520px, 72vw);
   height: 10px;
@@ -1597,7 +1594,7 @@ a{ color: inherit; text-decoration: none; }
   transform: rotate(-1.6deg);
 }
 
-/* Back link + hero buttons use your existing .btn system */
+
 .caseActions{
   display:flex;
   flex-wrap:wrap;
@@ -1605,7 +1602,7 @@ a{ color: inherit; text-decoration: none; }
   margin-top: 8px;
 }
 
-/* Meta card */
+
 .caseMeta{
   margin-top: 10px;
   display: grid;
@@ -1693,7 +1690,7 @@ a{ color: inherit; text-decoration: none; }
   background: rgba(255,255,255,0.6);
 }
 
-/* Use this ONLY on items you want NOT cropped (logos/posters) */
+
 .safeGallery__item--contain img{
   object-fit: contain;
   background: rgba(255,255,255,0.6);
@@ -1711,19 +1708,4 @@ a{ color: inherit; text-decoration: none; }
   .safeGallery__item{ grid-column: span 12; }
   .safeGallery__item img{ max-height: 320px; }
 }
-/* CASE HERO: give the topbar/nav more breathing room */
-.hero.caseHero{
-  padding-top: 56px !important;     /* space above the nav */
-  overflow: visible !important;     /* prevents any top clipping */
-}
 
-/* optional: tiny internal cushion */
-.hero.caseHero .hero__topbar{
-  padding-top: 6px;
-}
-
-/* helps avoid “text box clipping” on some browsers */
-.hero.caseHero .brand,
-.hero.caseHero .nav a{
-  line-height: 1.4;
-}
